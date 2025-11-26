@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Color Palette Picker — Premium UI</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- signature already present -->
+
+  <main class="page">
+    <header class="header">
+      <div class="title">
+        <h1>Color Palette Picker</h1>
+        <p>Generate beautiful color palettes — copy colors, lock favorites, save palettes.</p>
+      </div>
+
+      <div class="controls">
+        <div class="theme-select">
+          <label for="theme">Theme:</label>
+          <select id="theme">
+            <option value="vibrant" selected>Vibrant</option>
+            <option value="pastel">Pastel</option>
+            <option value="mono">Monochrome</option>
+          </select>
+        </div>
+
+        <button id="generateBtn" class="btn primary">Generate Palette</button>
+        <button id="downloadBtn" class="btn ghost">Download PNG</button>
+        <button id="saveBtn" class="btn ghost">Save Palette</button>
+      </div>
+    </header>
+
+    <section class="palette-area">
+      <div id="palette" class="palette">
+        <!-- 5 color cards -->
+        <div class="color-card" data-index="0"><div class="lock">🔒</div><div class="hex">#000000</div></div>
+        <div class="color-card" data-index="1"><div class="lock">🔒</div><div class="hex">#000000</div></div>
+        <div class="color-card" data-index="2"><div class="lock">🔒</div><div class="hex">#000000</div></div>
+        <div class="color-card" data-index="3"><div class="lock">🔒</div><div class="hex">#000000</div></div>
+        <div class="color-card" data-index="4"><div class="lock">🔒</div><div class="hex">#000000</div></div>
+      </div>
+    </section>
+
+    <section class="saved-section">
+      <h3>Saved palettes</h3>
+      <div id="savedContainer" class="saved-container"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="signature-left">Presented by Akash</div>
+
+      <small>• Made with ❤️ • Click a hex to copy</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
